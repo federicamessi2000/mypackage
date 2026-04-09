@@ -7,12 +7,14 @@ name = "mypackage"
 version = "0.1.0"
 description = "My first package"
 dependencies = [
+  "numpy>2.3",
   "httpx",
   "gidgethub>4.0.0",
 ]
 
 [project.optional-dependencies]
 dev = [
+  "pre-commit",
   "bumpver",
   "pytest",
   "pytest-cov",
